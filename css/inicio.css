@@ -171,11 +171,16 @@ header .login a {
 }
 
 footer {
-    background-color: #000; 
-    color: #fff; 
+    background-color: #000;
+    color: #fff;
     text-align: center;
-    padding: 5px 0; 
-    font-size: 0.9em; 
+    padding: 10px;
+    bottom: 0;
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+
+    border-radius: 10px;
 }
 
 .carousel h2 {
