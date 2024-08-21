@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Transportista</title>
+    <link rel="stylesheet" href="./css/usuarios.css">
+    <link rel="icon" href="./img/icon-maca.jpg">
+</head>
+
+<body>
+    <div class="header">
+        <div class="titulo">
+            <h2>Registro de Transportista</h2>
+        </div>
+        <div class="logo">
+            <a href="./inicio.html"><img src="./img/logo-maca.jpeg" alt="Logo"></a>
+        </div>
+    </div>
+    
+    <hr>
+    <div class="form-box">
+        <form action="vehiculo.html" id="registerForm">
+            <label for="nombre">Nombre y Apellido: </label>
+            <input type="text" name="nombre" id="nombre" required><br>
+    
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required><br>
+    
+            <label for="telefono">Teléfono: </label>
+            <input type="text" name="telefono" id="telefono" required><br>
+    
+            <label for="cuit">CUIT/CUIL: </label>
+            <input type="text" name="cuit" id="cuit" required><br>
+    
+            <input type="checkbox" name="terms" id="cuit" required> Acepto los <a href="terms.html" target="_blank">términos y
+                condiciones</a><br>
+    
+            <button type="submit" onclick="validarFormulario(event)">Registrar</button>
+    
+        </form>
+    </div>
+    
+    <hr>
+
+    <footer>
+        <p>&copy; 2024 MACAfletes. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./js/usuario_script.js"></script>
+</body>
+
+</html>

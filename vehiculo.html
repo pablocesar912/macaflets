@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Vehículo</title>
+    <link rel="icon" href="./img/icon-maca.jpg">
+    <link rel="stylesheet" href="./css/vehiculo.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="titulo">
+            <h2>Registro de Vehículo</h2>
+        </div>
+        <div class="logo">
+            <a href="./inicio.html"><img src="./img/logo-maca.jpeg" alt="Logo"></a>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="side-box" id="side-box-left">
+            <img src="https://i.pinimg.com/564x/2e/5f/3b/2e5f3b7bb74c67e2d47a497fd79fecb5.jpg" alt="Imagen 1">
+            <p>De Tunuyán al Mundo!</p>
+        </div>
+        <div class="form-box">
+
+            <form action="inicio.html" id="registerForm">
+                <label for="marca">Marca del Vehículo</label>
+                <input type="text" name="marca" id="marca" required><br>
+
+                <label for="modelo">Modelo del Vehículo</label>
+                <input type="text" name="modelo" id="modelo" required><br>
+
+                <label for="patente">Dominio/Patente del Vehículo</label>
+                <input type="text" name="patente" id="patente" required><br>
+
+                <label for="seguro_rto">Seguro/RTO:</label>
+                <select id="seguro_rto" name="seguro_rto" required>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select><br>
+
+                <label for="capacidad">Capacidad de carga (kg):</label>
+                <select id="capacidad" name="capacidad" required>
+                    <option value="5000-10000">5.000 - 10.000</option>
+                    <option value="10000-20000">10.000 - 20.000</option>
+                    <option value="20000-30000">20.000 - 30.000</option>
+                    <option value="30000-40000">30.000 - 40.000</option>
+                    <option value="40000-50000">40.000 - 50.000</option>
+                </select><br>
+
+                <label for="año">Año del Vehículo</label>
+                <input type="number" name="año" id="año" required><br>
+
+                <button type="submit" onclick="validarFormulario(event)">Registrar</button>
+
+            </form>
+        </div>
+        <div class="side-box" id="side-box-right">
+            <img src="https://i.pinimg.com/564x/e9/a9/93/e9a993538bbfa9a00f743172df15f41e.jpg" alt="Imagen 2">
+            <p>Transporta todo lo que quieras!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MACAfletes. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="../js/vehiculo_script.js"></script>
+</body>
+
+</html>

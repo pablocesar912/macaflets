@@ -1,0 +1,107 @@
+/* Reseteo básico de márgenes y rellenos */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    place-items: center;
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/564x/b4/22/4e/b4224e14b75f8c803b2c473b01914a32.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la cabecera */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+header h1{
+    margin: 0 auto;
+    grid-column: 2/6;
+
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.logo {
+    margin: 0 auto;
+    grid-column: 7/8;
+
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    
+    border-radius: 50%;
+    border: solid 5px rgb(2, 159, 18);
+}
+
+
+.logo img:hover{
+    border: solid 5px rgb(37, 94, 252);
+}
+
+.logo h2{
+    color: rgb(2, 159, 18);
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+/* Contenido principal */
+.content {
+    padding: 100px 20px 20px; /* Asegura que el contenido no quede debajo de la cabecera */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.content p {
+    margin: 15px 0;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+
+    border-radius: 10px;
+}

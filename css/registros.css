@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    place-items: center;
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/564x/b4/22/4e/b4224e14b75f8c803b2c473b01914a32.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.logo {
+    margin: 0 auto;
+    grid-column: 7/8;
+
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    
+    border-radius: 50%;
+    border: solid 5px rgb(2, 159, 18);
+}
+
+
+.logo img:hover{
+    border: solid 5px rgb(37, 94, 252);
+}
+
+.logo h2{
+    color: rgb(2, 159, 18);
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.titulo {
+    background-color:  rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    color: rgb(56, 56, 56);
+    font-size: 2em;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+
+    grid-column: 2/7;
+}
+
+.logo a{
+    color:rgb(2, 159, 18);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.logo a:hover{
+    color: white;
+}
+
+
+/* Estilos para las tablas */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+table th {
+    background-color: rgb(2, 159, 18);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table td {
+    color: #333;
+}
+
+table tr:hover {
+    background-color: rgb(220, 233, 221);
+    color: white;
+}
+
+/* Estilo para las celdas del índice */
+table td:first-child {
+    font-weight: bold;
+    background-color: rgba(28, 255, 50, 0.1);
+}
+
+/* Estilo para el encabezado de la tabla */
+table thead {
+    background-color: rgba(2, 159, 18, 0.9);
+}
+
+/* Estilo para las celdas con enlaces (como el logo) */
+table a {
+    color: rgb(2, 159, 18);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    color: rgb(37, 94, 252);
+}
+
+
+button{
+    background-color: blue;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(0, 165, 69);
+}
+
+h3{
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+
+
+/* Estilos del pie de página */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+
+    border-radius: 10px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}

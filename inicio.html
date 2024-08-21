@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="icon" href="./img/icon-maca.jpg">
+    <title>MACAflets</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="./img/logo-maca.jpeg" alt="Logo">
+        <h2>MACAflets</h2>
+    </div>
+    <nav>
+        <a href="#quienes-somos">Quienes somos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#servicios">Servicios</a>
+    </nav>
+    <div class="login">
+        <a href="login.html">Cerrar Sesión</a>
+        <img src="https://i.pinimg.com/564x/7b/12/d2/7b12d287221c0adf5b4efcdf326c178f.jpg" alt="Mi cuenta">
+    </div>
+</header>
+
+<main class="main-content">
+    <section class="left-panel">
+        <h2>Nuestra Plataforma</h2>
+        <p>El desafío planteado por la empresa - Maca S.A. - vinculada con nuestro grupo, es desarrollar una plataforma web que permita generar fletes para transportar el producto que la empresa comercializa - AJO - hacia distintos destinos de la Provincia.</p>
+        <p>La plataforma permite registrar un usuario con sus datos personales, y junto con ellos los datos del vehículo con el que va a realizar los fletes. Además permitirá, en un futuro, registrar a los dadores de carga junto con sus datos (personales y de la empresa) y los datos de la carga que ofrece.</p>
+        <p>El objetivo de la plataforma es vincular los vehículos vacíos con las cargas disponibles para generar los fletes, y transportarlos a los destinos productivos correspondientes. Los fletes generados a través de nuestra plataforma contarán con un sistema avanzado de seguimiento por localización GPS.</p>
+    </section>
+    <section class="right-panel">
+        <button onclick="window.location.href='usuarios.html'">Registrar Usuario</button>
+        <button onclick="window.location.href='cargas.html'">Registrar Carga</button>
+        <button onclick="window.location.href='registros.html'">Ver Registros</button>
+    </section>
+</main>
+
+<section class="carousel">
+    <div class="video-container">
+        <video controls>
+            <source src="./video/macaSA.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <h2>Entrevista</h2>
+
+    <div class="sidebar">
+        <img src="./img/eber.jpg" alt="eber">
+        <img src="./img/albano.jpg" alt="albano">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEfVWWQXz9XKRk3iN7vQmNeE-FGK7FrC4NA&s.jpg" alt="Imagen de un hombre">
+    </div>
+</section>
+<hr>
+<section class="content">
+    <div class="box faq-container">
+        <h2>Eber Perez Plaza</h2>
+
+        <p><strong>Pregunta 1:</strong> ¿Cuál es el objetivo de la plataforma?</p>
+        <p>La plataforma busca vincular vehículos vacíos con cargas disponibles para generar fletes y transportarlos a destinos productivos, con un sistema de seguimiento por GPS.</p>
+        
+        <p><strong>Pregunta 2:</strong> ¿Qué características tiene el sistema de seguimiento?</p>
+        <p>Permite monitorear en tiempo real la ubicación del vehículo, brindando seguridad y transparencia en el proceso de transporte.</p>
+
+        <p><strong>Pregunta 3:</strong> ¿Cómo surgió Maca?</p>
+        <p>Maca S.A. surgió con el objetivo de desarrollar una plataforma web para generar fletes, específicamente para el transporte de ajo, un producto clave de la empresa. La iniciativa nació del desafío de conectar vehículos vacíos con cargas disponibles y mejorar el proceso de transporte en la provincia.</p>
+
+        <p><strong>Pregunta 4:</strong> ¿Cuál es la misión de Maca?</p>
+        <p>La misión de Maca S.A. es proporcionar una plataforma eficaz para la gestión de fletes que conecte vehículos vacíos con cargas disponibles. La empresa se enfoca en asegurar un transporte eficiente, transparente y con un avanzado sistema de seguimiento por GPS.</p>
+
+        <p><strong>Pregunta 5:</strong> ¿Qué obstáculos se encontró Maca?</p>
+        <p>Entre los obstáculos enfrentados por Maca S.A. se encuentran la implementación de un sistema eficiente de seguimiento por GPS, la necesidad de desarrollar una plataforma web que cumpla con los requisitos de los usuarios, y la integración de funcionalidades que permitan el registro y la gestión de datos tanto de los vehículos como de los dadores de carga.</p>
+
+        <p><strong>Pregunta 6:</strong> ¿Cómo contribuye Maca al país?</p>
+        <p>Maca S.A. contribuye al país al optimizar la logística de transporte de productos agrícolas, como el ajo. Al mejorar la eficiencia en el transporte y el seguimiento de los fletes, la empresa apoya el desarrollo económico y facilita la comercialización de productos clave para la economía local.</p>
+
+        <p><strong>Pregunta 7:</strong> ¿Qué consejos le daría a un nuevo emprendedor?</p>
+        <p>A un nuevo emprendedor, Maca S.A. le recomendaría enfocarse en identificar un problema específico en el mercado y desarrollar una solución que ofrezca una ventaja clara. Además, es crucial estar preparado para enfrentar desafíos técnicos y logísticos, y mantener una visión clara sobre cómo la empresa puede aportar valor a sus usuarios.</p>
+    </div>
+</section><hr>
+
+
+<footer>
+    <p>&copy; 2024 MACAfletes. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel img');
+
+    setInterval(() => {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }, 5000);
+</script>
+
+</body>
+</html>

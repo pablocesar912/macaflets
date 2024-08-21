@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Cargas</title>
+    <link rel="icon" href="./img/icon-maca.jpg" />
+    <link rel="stylesheet" href="./css/cargas.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="titulo">
+            <h2>Registro De Cargas</h2>
+        </div>
+        <div class="logo">
+            <a href="./inicio.html"><img src="./img/logo-maca.jpeg" alt="Logo" /></a>
+        </div>
+    </div>
+    <hr />
+    <div class="main">
+        <div class="container">
+
+            <div class="form-box">
+                <form action="inicio.html" id="registerForm">
+                    <label for="lote">Número de Lote:</label>
+                    <input type="text" id="lote" name="lote" required />
+    
+                    <label for="volumen">Volumen (en kg):</label>
+                    <input type="number" id="volumen" name="volumen" step="0.1" required />
+    
+                    <label for="tipo">Tipo de Carga:</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="fresco">Fresco</option>
+                        <option value="seco">Seco</option>
+                        <option value="en polvo">En Polvo</option>
+                    </select>
+    
+                    <label for="origen">Origen:</label>
+                    <input type="text" id="origen" name="origen" required />
+    
+                    <label for="descripcion">Descripción Adicional:</label>
+                    <textarea id="descripcion" name="descripcion"></textarea>
+    
+                    <button type="submit" onclick="validarFormulario(event)">Registrar Carga</button>
+            </div>
+            
+            </form>
+        </div>
+    </div>
+    <hr />
+    <footer>
+        <p>&copy; 2024 MACAfletes. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./js/carga_script.js"></script>
+</body>
+
+</html>
