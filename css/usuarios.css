@@ -209,10 +209,14 @@ footer {
     form input[type="text"],
     form input[type="email"],
     form input[type="password"] {
-        width: calc(100% - 10px);
+        width: calc(85% - 10px);
     }
 
     button {
         font-size: medium;
+    }
+
+    #registerForm{
+        width: 85%;
     }
 }
