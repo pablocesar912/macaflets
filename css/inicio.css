@@ -179,7 +179,6 @@ footer {
     width: auto;
     height: 50px;
     margin-top: 10px;
-
     border-radius: 10px;
 }
 
@@ -193,5 +192,81 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Media Queries for Responsiveness */
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    header nav {
+        margin-top: 10px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-panel, .right-panel {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .sidebar {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .video-container video {
+        width: 100%;
+    }
+
+    .right-panel {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    header .logo h2 {
+        font-size: 1.5em;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        font-size: 1em;
+    }
+
+    .right-panel button {
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    .carousel img {
+        width: 150px;
+        height: 110px;
+    }
+
+    .content .box {
+        font-size: 1em;
+    }
+
+    .faq-container h2 {
+        font-size: 1.3em;
+    }
+
+    .faq-container p {
+        font-size: 1.1em;
+    }
+}
